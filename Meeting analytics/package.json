@@ -1,0 +1,48 @@
+{
+  "name": "meeting-intelligence-mcp",
+  "version": "1.0.0",
+  "description": "Advanced Meeting Intelligence MCP Server - Analyze meetings, extract insights, track action items, and boost productivity",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "bin": {
+    "meeting-intelligence-mcp": "build/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "meeting",
+    "intelligence",
+    "analytics",
+    "productivity",
+    "ai",
+    "transcript",
+    "action-items",
+    "chatgpt",
+    "openai"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/meeting-intelligence-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/meeting-intelligence-mcp/issues"
+  },
+  "homepage": "https://github.com/yourusername/meeting-intelligence-mcp#readme"
+}

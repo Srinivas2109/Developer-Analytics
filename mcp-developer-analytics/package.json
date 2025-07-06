@@ -1,0 +1,37 @@
+{
+  "name": "mcp-developer-analytics",
+  "version": "1.0.0",
+  "description": "MCP server for analyzing developer profiles and repositories",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "developer",
+    "analytics",
+    "github"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "@types/node": "^24.0.10",
+    "axios": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "bin": {
+    "mcp-developer-analytics": "./build/index.js"
+  },
+  "files": [
+    "build/"
+  ]
+}
